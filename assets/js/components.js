@@ -8,7 +8,7 @@ const components = {
             </div>
             <nav>
                 <ul>
-                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="categories.html">Categories</a></li>
                     <li><a href="retreats.html">Women-Only Retreats</a></li>
                     <li><a href="about.html">About</a></li>
