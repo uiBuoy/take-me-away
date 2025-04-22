@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Ensure the page takes the full height */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+/* Push footer to the bottom */
+main {
+    flex: 1;
+    /* Pushes the footer down */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #FFD700, #FFC000);
+    color: #333333;
+    padding: 15px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Add space to the body so content isn't hidden under the fixed header */
+body {
+    padding-top: 70px;
+    /* Adjust this value based on the height of your header */
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 8px 20px;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    transform: translateY(-2px);
+    background: white;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #FFC000;
+    transition: all 0.3s ease;
+}
+
+.logo:hover .logo-img {
+    border-color: #FFA500;
+}
+
+.logo span {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: #333333;
+    text-shadow: 1px 1px 0px rgba(255, 192, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.logo:hover span {
+    color: #000000;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333333;
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #000000;
+    background-color: #FFE135;
+}
+
+nav ul li a:hover:after {
+    width: 80%;
+}
+
+/* Right Section (Empty for now) */
+.right-section {
+    min-width: 100px;
+    text-align: right;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(-45deg, #FFD700, #FFC000);
+    color: #333333;
+    text-align: center;
+    padding: 25px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* General Button Styles */
+button {
+    background-color: white;
+    color: #333333;
+    padding: 12px 25px;
+    border: 2px solid #FFD700;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #FFE135;
+    border-color: #FFE135;
+    transform: translateY(-2px);
+}
+
+/* Link Styles */
+a {
+    color: #333333;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #000000;
+}
+
+/* Footer Links */
+footer a {
+    color: #333333;
+    text-decoration: none;
+    border-bottom: 1px solid #333333;
+}
+
+footer a:hover {
+    color: #000000;
+    border-bottom-color: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .right-section {
+        display: none;
+        /* Hide right section on small screens for now */
+    }
+}

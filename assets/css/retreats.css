@@ -1,0 +1,198 @@
+@import url('main.css');
+/* Import global styles */
+
+/* Using softer yellow shades:
+Primary: #FFF4D4 (very light yellow)
+Secondary: #FFEEBA (soft yellow)
+Accent: #FFE5A3 (warm yellow) */
+
+/* Retreats Page */
+.retreats {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+    background: white;
+}
+
+.retreats h1 {
+    font-size: 2.8rem;
+    color: #333333;
+    font-weight: 300;
+    margin-bottom: 15px;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.retreats p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+/* Accordion Section */
+.accordion {
+    margin: 40px 0;
+    text-align: left;
+}
+
+.accordion h2 {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.accordion-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accordion-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.accordion-header {
+    width: 100%;
+    background: white;
+    color: #333333;
+    padding: 20px 25px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.accordion-header:hover {
+    background: #FFD700;
+}
+
+.icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+    color: #333333;
+}
+
+.accordion-content {
+    display: none;
+    padding: 25px;
+    background: white;
+    color: #666;
+    line-height: 1.6;
+}
+
+.accordion-content p {
+    margin-bottom: 15px;
+}
+
+.accordion-content strong {
+    color: #333333;
+}
+
+/* Upcoming Retreat CTA */
+.upcoming-retreat {
+    background: white;
+    color: #333333;
+    padding: 60px 40px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 2px solid #FFD700;
+}
+
+.upcoming-retreat h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.upcoming-retreat p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #333333;
+}
+
+.countdown {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #333333;
+    background: #FFF9E6;
+    padding: 15px 30px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.cta-button {
+    background: #FFD700;
+    color: #333333;
+    font-size: 1.2rem;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    background: #FFE135;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .retreats h1 {
+        font-size: 2.2rem;
+    }
+
+    .accordion-container {
+        width: 100%;
+    }
+
+    .accordion-header {
+        font-size: 1.1rem;
+        padding: 15px 20px;
+    }
+
+    .accordion-content {
+        padding: 20px;
+    }
+
+    .upcoming-retreat {
+        padding: 40px 20px;
+    }
+
+    .cta-button {
+        font-size: 1.1rem;
+        padding: 12px 25px;
+    }
+
+    .countdown {
+        font-size: 1.2rem;
+        padding: 12px 25px;
+    }
+}
