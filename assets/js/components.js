@@ -2,9 +2,11 @@
 const components = {
     header: `
         <header>
-            <div class="logo">
-                <img width="40" height="40" style="border-radius: 50%;" src="./assets/images/logo.jpg" alt="TakeMeAway Logo" class="log-icon">
-                <span>TakeMeAway</span>
+            <div class="left-section">
+                <div class="logo">
+                    <img width="120" height="120" style="border-radius: 8%;" src="./assets/images/new-logo.jpeg" alt="TakeMeAway Logo" class="log-icon">
+                </div>
+                <div class="logo-title">Take me Away</div>
             </div>
             <nav>
                 <ul>
@@ -20,9 +22,17 @@ const components = {
         </header>
     `,
     footer: `
-        <footer>
-            <p>&copy; 2025 TakeMeAway. All rights reserved.</p>
-        </footer>
+    <footer>
+    <div class="footer-horizontal">
+        <p>&copy; 2025 TakeMeAway. All rights reserved.</p>
+        <div class="social-section">
+            <a href="https://www.instagram.com/takemeaway.retreats/profilecard/?igsh=MTBxbGkzZXVjYnhxZg%3D%3D" target="_blank" aria-label="Instagram" class="instagram-link">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
+                <span>takemeaway.retreats</span>
+            </a>
+        </div>
+    </div>
+</footer>
     `
 };
 

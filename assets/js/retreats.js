@@ -23,5 +23,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const registerBtn = document.getElementById("cta-button");
 registerBtn.addEventListener('click', () => {
-    window.open("https://docs.google.com/forms/d/e/1FAIpQLScTHWvx1RjT90TO0cteXsbdWv19sMJNpsA_SZc9fOCnLSX9nw/viewform", '_blank');
+    window.open("https://docs.google.com/forms/d/1N4Dm4x0OIXJ92R5VHb1HlvjQvvuUtKDW_SETDStz8Dc/edit", '_blank');
 })

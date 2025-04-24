@@ -6,6 +6,9 @@
     <title>Home</title>
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="header"></div>
@@ -19,13 +22,13 @@
                 <div class="hero-text">
                     <h1>TakeMeAway</h1>
                     <p>Where Women Rise, Connect, and Explore Beyond Limits</p>
-                    <a href="categories.html" class="btn">Start Your Journey</a>
+                    <button class="btn" id="cta-button">Start Your Journey</button>
                 </div>
     
                 <!-- Right Side Image -->
-                <!-- <div class="hero-image">
-                    <img src="https://theartarium.com/cdn/shop/articles/BP4.jpg?v=1689327204" alt="Woman exploring">
-                </div> -->
+                <div class="hero-image">
+                    <img src="./assets/images/hero-section-img.jpeg" alt="Woman exploring">
+                </div>
             </div>
         </section>
 
@@ -42,35 +45,65 @@
             </div>
     
             <div class="about-platform__image">
-                <img src="https://kashmirscanmagazine.com/wp-content/uploads/2021/04/Women-empowerment-in-india.jpg"
+                <img 
+                    src="./assets/images/founder-home-section-img.jpeg"
                     alt="Women Supporting Each Other">
             </div>
         </div>
         </section>
 
-        <section  class="quick-navigation">
-            <!-- Quick Navigation Section -->
-                <h3>Explore More</h3>
+        <!-- <section  class="quick-navigation">
+                <h3>Take me away offers</h3>
                 <div class="navigation-grid">
-                    <!-- Categories -->
                     <a href="categories.html" class="nav-item">
                         <img src="https://cdn-icons-png.freepik.com/256/9710/9710991.png?semt=ais_hybrid" alt="Categories">
                         <span>Categories</span>
                     </a>
             
-                    <!-- Featured Programs -->
                     <a href="retreats.html" class="nav-item">
                         <img src="https://cdn-icons-png.flaticon.com/512/1541/1541425.png" alt="Featured Programs">
                         <span>Featured Programs</span>
                     </a>
             
-                    <!-- Testimonials -->
                     <a href="testimonials.html" class="nav-item">
                         <img src="https://cdn-icons-png.flaticon.com/512/11280/11280046.png" alt="Testimonials">
                         <span>Testimonials</span>
                     </a>
                 </div>
+        </section> -->
+
+        <section  class="quick-navigation">
+                <h3>Take me away offers</h3>
+                <div class="navigation-grid">
+                   
+                    <a href="categories.html" class="nav-item">
+                        <img src="https://png.pngtree.com/png-vector/20221024/ourmid/pngtree-women-logo-png-image_6357074.png" alt="Categories">
+                        <span>Women-Only Retreats</span>
+                    </a>
+            
+                    <a href="categories.html" class="nav-item">
+                        <img src="https://w7.pngwing.com/pngs/475/926/png-transparent-mentorship-coaching-interpersonal-relationship-crunch-moreno-valley-text-logo-material.png" alt="Featured Programs">
+                        <span>Coaching & Mentoring</span>
+                    </a>
+            
+                    <a href="categories.html" class="nav-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/11280/11280046.png" alt="Testimonials">
+                        <span>Leadership and Sales Trainings</span>
+                    </a>
+                </div>
+        </section>
+
+
+        <section class="upcoming-retreat">
+            <h2>Real Stories, Real Impact</h2>
+            <p>
+                Where Every Journey Leads to a Stronger You - Discover curated offerings and programs designed for women’s success
+            </p>
            
+            <!-- <button class="cta-button" id="cta-button">Start Your Journey</button> -->
+            <a href="testimonials.html" class="cta-button">
+                <span>Start Your Journey</span>
+            </a>
         </section>
     </main>
 
@@ -80,5 +113,6 @@
     
     <script src="./assets/js/components.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/retreats.js"></script>
 </body>
 </html>
