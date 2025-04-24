@@ -21,137 +21,278 @@ body {
     color: #333333;
 }
 
-/* Push footer to the bottom */
-main {
-    flex: 1;
-    /* Pushes the footer down */
-}
-
-/* Header Styles */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(45deg, #FFD700, #FFC000);
-    color: #333333;
-    padding: 24px 40px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
 /* Add space to the body so content isn't hidden under the fixed header */
 body {
     padding-top: 70px;
     /* Adjust this value based on the height of your header */
 }
 
-/* Logo */
+/* Push footer to the bottom */
+main {
+    flex: 1;
+    /* Pushes the footer down */
+}
+
+/* ----------------- Header Styles -------------------- */
+/* === Base Header === */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #FFD700, #FFC000);
+    padding: 24px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* === Logo === */
 .logo {
     display: flex;
     align-items: center;
     gap: 15px;
-    /* background: rgba(255, 255, 255, 0.95); */
-    /* padding: 8px 20px; */
-    /* border-radius: 30px; */
-    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); */
-    transition: all 0.3s ease;
     position: absolute;
     top: 10%;
-
-}
-
-.logo:hover {
-    transform: translateY(-2px);
-    /* background: white; */
+    z-index: 1000;
 }
 
 .logo-img {
-    width: 60px;
-    height: 60px;
-    /* border-radius: 30%; */
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    border: 2px solid #FFC000;
-    transition: all 0.3s ease;
+    border-radius: 6px;
 }
 
-.logo:hover .logo-img {
-    border-color: #FFA500;
-}
-
-.logo span {
+.logo-title {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-size: 24px;
-    font-weight: 300;
     font-style: italic;
-    letter-spacing: 1px;
-    color: #333333;
-    text-shadow: 1px 1px 0px rgba(255, 192, 0, 0.2);
-    transition: all 0.3s ease;
+    font-weight: 300;
+    color: #333;
+    display: none;
 }
 
-.logo:hover span {
-    color: #000000;
-}
-
-/* Navigation */
-nav ul {
+/* === Desktop Nav === */
+.desktop-nav ul {
     list-style: none;
+    display: flex;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    padding: 10px auto;
 }
 
-nav ul li {
+.desktop-nav ul li {
     margin: 0 20px;
 }
 
-nav ul li a {
-    color: #333333;
+.desktop-nav ul li a {
+    color: #333;
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
-    transition: all 0.3s ease-in-out;
-    position: relative;
     padding: 5px 10px;
     border-radius: 15px;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
-nav ul li a:after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #333333;
-    transition: width 0.3s ease-in-out;
-}
-
-nav ul li a:hover {
-    color: #000000;
+.desktop-nav ul li a:hover {
+    color: #000;
     background-color: #FFE135;
 }
 
-nav ul li a:hover:after {
-    width: 80%;
+/* === Mobile Nav (slide-in) === */
+#mobile-nav {
+    position: absolute; /* was fixed */
+    top: 100%; /* starts just below header */
+    left: 0;
+    width: 100%;
+    background-color: #FFFBEA;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+    max-height: 0;
+    z-index: 999;
+    border-bottom: 1px solid #eee;
 }
 
-/* Right Section (Empty for now) */
+/* Show menu when open */
+#mobile-nav.open {
+    max-height: 500px; /* enough to fit all items */
+}
+
+/* Mobile nav list styling */
+#mobile-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mobile nav item */
+#mobile-nav ul li {
+    width: 100%;
+}
+
+/* Mobile nav links */
+#mobile-nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid #f2e6c0;
+}
+
+/* Hover effect */
+#mobile-nav ul li a:hover {
+    background-color: #FFE135;
+    color: #111;
+    padding-left: 28px;
+}
+
+
+/* === HAMBURGER ICON (animated) === */
+.hamburger {
+    display: none; /* visible only in mobile */
+    width: 30px;
+    height: 24px;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #333;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 0;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger span:nth-child(2) {
+    top: 10px;
+}
+
+.hamburger span:nth-child(3) {
+    top: 20px;
+}
+
+/* === HAMBURGER TRANSFORM TO CROSS === */
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px;
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 10px;
+}
+
+
+
+/* === Right Section (optional content) === */
 .right-section {
     min-width: 100px;
     text-align: right;
 }
 
+/* === Responsive Rules === */
 
 
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* --- Hide right-side content for cleaner tablet view --- */
+    .right-section {
+        display: none;
+    }
+
+    /* --- Push desktop nav to the right side --- */
+    .desktop-nav {
+        margin-left: auto;         /* pushes nav to the right */
+        display: flex;
+    }
+
+    /* --- Adjust spacing between nav items if needed --- */
+    .desktop-nav ul {
+        display: flex;
+        justify-content: flex-end; /* aligns nav links to the right */
+    }
+
+    .desktop-nav ul li {
+        margin: 0 12px;            /* slightly tighter spacing on tablet */
+    }
+}
+
+
+@media (max-width: 768px) {
+    header{
+        padding: 24px 20px;
+    }
+    .desktop-nav {
+        display: none;
+    }
+
+    .logo-title{
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .right-section {
+        display: none;
+    }
+
+    .logo-title {
+        font-size: 18px;
+    }
+
+    .logo {
+        
+        position: static;
+        /* top: 10%;
+        z-index: 1000; */
+    }
+    
+    .logo-img {
+        width: 60px;
+        height: 60px;
+        /* object-fit: cover;
+        border-radius: 6px; */
+    }
+}
+
+
+
+
+/* ----------------- Header Styles -------------------- */
+
+
+
+
+
+
+/* --------------- footer section ---------------------*/
 
 footer {
     background: linear-gradient(-45deg, #FFD700, #FFC000);
@@ -217,6 +358,47 @@ footer p {
 }
 
 
+/* --- Responsive Styles --- */
+
+@media (max-width: 768px) {
+    .footer-horizontal {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    footer {
+        padding: 20px 24px;
+        text-align: left;
+    }
+
+    .instagram-link span {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .instagram-link {
+        flex-direction: row;
+        gap: 6px;
+    }
+
+    .instagram-link span {
+        font-size: 13px;
+    }
+
+    footer {
+        padding: 16px 20px;
+    }
+}
+
+
+/* --------------- footer section ---------------------*/
+
 
 
 
@@ -250,39 +432,6 @@ a:hover {
     color: #000000;
 }
 
-/* Footer Links */
-footer a {
-    color: #333333;
-   
-}
 
-footer a:hover {
-    color: #000000;
-    border-bottom-color: #000000;
-}
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-        padding: 15px 20px;
-    }
 
-    .logo {
-        margin-bottom: 15px;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .right-section {
-        display: none;
-        /* Hide right section on small screens for now */
-    }
-}

@@ -1,25 +1,43 @@
 // Component loader
 const components = {
     header: `
-        <header>
-            <div class="left-section">
-                <div class="logo">
-                    <img width="120" height="120" style="border-radius: 8%;" src="./assets/images/new-logo.jpeg" alt="TakeMeAway Logo" class="log-icon">
-                </div>
-                <div class="logo-title">Take me Away</div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="categories.html">Categories</a></li>
-                    <li><a href="retreats.html">Women-Only Retreats</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-            <div class="right-section">
-                <!-- Empty for now, you can add a login button, user profile, etc. -->
-            </div>
-        </header>
+    <header>
+    <div class="left-section">
+        <div class="logo">
+            <img class="logo-img" src="./assets/images/new-logo.jpeg" alt="TakeMeAway Logo">
+            <div class="logo-title">Take me Away</div>
+        </div>
+    </div>
+
+    <!-- Hamburger (visible only on mobile) -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Desktop Nav (visible only on large screens) -->
+    <nav class="desktop-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="retreats.html">Women-Only Retreats</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Nav (slide-in) -->
+    <nav id="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="retreats.html">Women-Only Retreats</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="right-section"></div>
+</header>
     `,
     footer: `
     <footer>
@@ -53,3 +71,22 @@ function loadComponents() {
 
 // Load components when DOM is ready
 document.addEventListener('DOMContentLoaded', loadComponents); 
+
+
+
+function toggleMenu() {
+    const nav = document.getElementById('mobile-nav');
+    const hamburger = document.querySelector('.hamburger');
+    nav.classList.toggle('open');
+    hamburger.classList.toggle('open');
+}
+
+// Optional: close menu on outside click
+window.addEventListener('click', function (e) {
+    const nav = document.getElementById('mobile-nav');
+    const hamburger = document.querySelector('.hamburger');
+    if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+        nav.classList.remove('open');
+        hamburger.classList.remove('open');
+    }
+});
