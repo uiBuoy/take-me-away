@@ -32,7 +32,10 @@
 }
 
 /* Category Card */
-.category-card {
+.category-card {display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     background: #ffffff;
     border-radius: 15px;
     overflow: hidden;
@@ -94,6 +97,22 @@
     position: absolute;
     left: 0;
     font-weight: bold;
+}
+
+.category-card a {
+    display: inline-block;
+    margin: 0 1.5rem 1.5rem; /* Make sure it matches bottom padding */
+    text-align: left;
+    color: #3498db;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    margin-top: auto;
+}
+
+.category-card a:hover {
+    text-decoration: underline;
+    color: #1d6fa5;
 }
 
 /* Responsive Design */

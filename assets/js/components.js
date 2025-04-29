@@ -20,9 +20,11 @@ const components = {
     <nav class="desktop-nav">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="categories.html">Categories</a></li>
+            <li><a href="categories.html">Journeys</a></li>
             <li><a href="retreats.html">Women-Only Retreats</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">Inspirational stories</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+
         </ul>
     </nav>
 
@@ -30,9 +32,11 @@ const components = {
     <nav id="mobile-nav">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="categories.html">Categories</a></li>
+            <li><a href="categories.html">Journeys</a></li>
             <li><a href="retreats.html">Women-Only Retreats</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">Inspirational stories</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+
         </ul>
     </nav>
 

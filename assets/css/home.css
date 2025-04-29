@@ -52,7 +52,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1350px;
     width: 100%;
     z-index: 2;
     color: white;
@@ -128,18 +128,17 @@
 
 /* Right Side Image */
 .hero-image {
-    width: 80%;
+    width: 60%;
     /* Adjusted width */
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-
+    /* align-items: center; */
+    margin-top: 16px;
     /* border: 1px solid pink; */
 }
 
 .hero-image img {
-    max-width: 70%;
-    height: auto;
+    max-width: 80%;
     border-radius: 10px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
     /* height: 400px; */
@@ -189,6 +188,9 @@
         max-width: 500px;
         height: auto;
         border-radius: 10px;
+        border: 2px solid black;
+        margin: auto;
+        text-align: center;
     }
 }
 
@@ -664,4 +666,42 @@
         font-size: 1.2rem;
         padding: 12px 25px;
     }
+}
+
+
+
+/* carousal css */
+
+.swiper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    color: #FFC000 !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #FFC000 !important;
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+  }
+
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 16px !important;
 }

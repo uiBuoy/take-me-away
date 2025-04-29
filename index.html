@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 </head>
 <body>
     <div id="header"></div>
@@ -27,8 +29,33 @@
     
                 <!-- Right Side Image -->
                 <div class="hero-image">
-                    <img src="./assets/images/hero-section-img.jpeg" alt="Woman exploring">
+                    <!-- <img src="./assets/images/hero-section-img.jpeg" alt="Woman exploring"> -->
+
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide">
+                            <img src="./assets/images/hero-section-img.jpeg" alt="Woman exploring">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./assets/images/carousal-1.jpeg" alt="Woman exploring">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./assets/images/carousal-2.jpeg" alt="Woman exploring">
+                          </div>
+                        </div>
+                      
+       
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      
+                        <!-- If you want pagination dots -->
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
+
+                
             </div>
         </section>
 
@@ -73,7 +100,7 @@
         </section> -->
 
         <section  class="quick-navigation">
-                <h3>Take me away offers</h3>
+                <h3>Take Me Away Journeys</h3>
                 <div class="navigation-grid">
                    
                     <a href="categories.html" class="nav-item">
@@ -93,7 +120,6 @@
                 </div>
         </section>
 
-
         <section class="upcoming-retreat">
             <h2>Real Stories, Real Impact</h2>
             <p>
@@ -111,8 +137,40 @@
 
     <div id="footer"></div>
     
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
     <script src="./assets/js/components.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/retreats.js"></script>
+
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+          loop: true,
+          autoplay: {
+            delay: 3000, 
+            disableOnInteraction: false, 
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          slidesPerView: 1,
+          spaceBetween: 10,
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 1,
+            },
+          }
+        });
+      </script>
 </body>
 </html>
