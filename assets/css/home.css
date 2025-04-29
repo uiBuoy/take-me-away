@@ -133,12 +133,12 @@
     display: flex;
     justify-content: flex-end;
     /* align-items: center; */
-
+    margin-top: 16px;
     /* border: 1px solid pink; */
 }
 
 .hero-image img {
-    max-width: 70%;
+    max-width: 80%;
     border-radius: 10px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
     /* height: 400px; */
@@ -701,3 +701,7 @@
     width: 10px !important;
     height: 10px !important;
   }
+
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 16px !important;
+}

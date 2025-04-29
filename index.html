@@ -44,10 +44,9 @@
                           <div class="swiper-slide">
                             <img src="./assets/images/carousal-2.jpeg" alt="Woman exploring">
                           </div>
-                          <!-- Add more slides as needed -->
                         </div>
                       
-                        <!-- If you want navigation buttons -->
+       
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                       
@@ -101,7 +100,7 @@
         </section> -->
 
         <section  class="quick-navigation">
-                <h3>Take me away offers</h3>
+                <h3>Take Me Away Journeys</h3>
                 <div class="navigation-grid">
                    
                     <a href="categories.html" class="nav-item">
@@ -120,7 +119,6 @@
                     </a>
                 </div>
         </section>
-
 
         <section class="upcoming-retreat">
             <h2>Real Stories, Real Impact</h2>
@@ -150,6 +148,10 @@
     <script>
         const swiper = new Swiper('.swiper', {
           loop: true,
+          autoplay: {
+            delay: 3000, 
+            disableOnInteraction: false, 
+          },
           pagination: {
             el: '.swiper-pagination',
             clickable: true,
