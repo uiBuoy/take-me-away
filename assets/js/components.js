@@ -22,7 +22,9 @@ const components = {
             <li><a href="index.html">Home</a></li>
             <li><a href="categories.html">Categories</a></li>
             <li><a href="retreats.html">Women-Only Retreats</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">Inspirational stories</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+
         </ul>
     </nav>
 
@@ -32,7 +34,9 @@ const components = {
             <li><a href="index.html">Home</a></li>
             <li><a href="categories.html">Categories</a></li>
             <li><a href="retreats.html">Women-Only Retreats</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">Inspirational stories</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+
         </ul>
     </nav>
 
