@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Details</title>
+  <link rel="stylesheet" href="./assets/css/blogs.css" />
+  <link rel="stylesheet" href="./assets/css/main.css">
+    </head>
+<body>
+  <div id="header"></div>
+  <div class="blog-wrapper">
+    <div id="blog-details"></div>
+  </div>
+
+  <div id="footer"></div>
+
+
+  <script src="blogData.js"></script>
+  <script src="./assets/js/components.js"></script>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const blogId = params.get("id");
+    const blog = blogPosts.find(p => p.id === blogId);
+    const container = document.getElementById("blog-details");
+
+    if (blog) {
+      container.innerHTML = `
+        <div class="blog-header">
+          <img src="${blog.image}" alt="${blog.title}" class="blog-main-image" loading="lazy">
+          <div class="blog-meta">
+            <span class="category">${blog.category}</span>
+            <span class="date">${blog.date}</span>
+            <span class="author">By ${blog.author}</span>
+          </div>
+          <h1 class="blog-title">${blog.title}</h1>
+          <p class="blog-subtitle">${blog.subtitle}</p>
+        </div>
+        <div class="blog-content">${blog.content}</div>
+      `;
+    } else {
+      container.innerHTML = "<p>Blog post not found.</p>";
+    }
+  </script>
+</body>
+</html>

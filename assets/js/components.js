@@ -5,7 +5,7 @@ const components = {
     <div class="left-section">
         <div class="logo">
             <img class="logo-img" src="./assets/images/new-logo.jpeg" alt="TakeMeAway Logo">
-            <div class="logo-title">Take me Away</div>
+            <!--  <div class="logo-title">Take me Away</div> -->
         </div>
     </div>
 

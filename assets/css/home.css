@@ -174,6 +174,7 @@
 
     .btn {
         margin-top: 25px;
+        background-color: #FFE135;
     }
 
     .hero-image {
@@ -677,6 +678,7 @@
     height: auto;
     display: flex;
     justify-content: center;
+    /* border: 1px solid red; */
   }
 
   .swiper-slide {
@@ -687,20 +689,28 @@
     text-align: center;
   }
 
+  .swiper-slide img {
+    width: 100%;
+    height: 400px; /* or any fixed height you prefer */
+    object-fit: cover;
+  }
+
   .swiper-button-prev, .swiper-button-next {
     color: #FFC000 !important;
   }
 
-  .swiper-pagination-bullet-active {
-    background-color: #FFC000 !important;
-    width: 14px !important;
-    height: 14px !important;
-  }
-
   .swiper-pagination-bullet {
+    background-color: #F3F2EC !important; 
     width: 10px !important;
     height: 10px !important;
+    opacity: 1 !important;
   }
+  .swiper-pagination-bullet-active {
+    background-color: #FFC000 !important;
+    width: 12px !important;
+    height: 12px !important;
+  }
+
 
   .swiper-button-next:after, .swiper-button-prev:after {
     font-size: 16px !important;
