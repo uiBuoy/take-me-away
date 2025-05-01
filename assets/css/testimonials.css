@@ -41,7 +41,7 @@
 }
 
 .testimonials-hero-text h1 {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 20px;
@@ -51,7 +51,7 @@
 }
 
 .testimonials-hero-text p {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     font-size: 1.4rem;
     font-weight: 300;
     margin-bottom: 30px;
@@ -94,7 +94,7 @@
 
 .retreat-testimonial-text {
     width: 40%;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     color: #555;
 }
 
@@ -112,7 +112,7 @@
     font-weight: 600;
     font-size: 1rem;
     color: #333; /* Darker text for readability */
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     position: relative;
     display: inline-block;
 }
@@ -176,7 +176,7 @@
 }
 
 .testimonials-grid__content h2 {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 3.2rem;
     color: #333;
     margin-bottom: 20px;
@@ -197,7 +197,7 @@
 }
 
 .testimonials-intro {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     font-size: 1.4rem;
     color: #555;
     line-height: 1.8;
@@ -253,14 +253,14 @@
 }
 
 .testimonial-content h3 {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 2rem;
     color: #333;
     margin-bottom: 10px;
 }
 
 .testimonial-title {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     font-size: 1.1rem;
     color: #FFD700;
     margin-bottom: 15px;
@@ -268,7 +268,7 @@
 }
 
 .testimonial-text {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     font-size: 1.1rem;
     color: #555;
     line-height: 1.6;
@@ -289,14 +289,14 @@
 }
 
 .testimonials-cta__content h2 {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 3rem;
     color: #333;
     margin-bottom: 20px;
 }
 
 .testimonials-cta__content p {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     font-size: 1.3rem;
     color: #333;
     margin-bottom: 30px;
@@ -310,7 +310,7 @@
     color: white;
     text-decoration: none;
     border-radius: 30px;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     font-size: 1.1rem;
     font-weight: 500;
     transition: all 0.3s ease;

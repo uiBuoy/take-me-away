@@ -91,7 +91,8 @@
 }
 
 .hero-text p {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Thicccboi', sans-serif;
     font-size: 1.4rem;
     font-weight: 300;
     margin: 30px auto;
@@ -109,7 +110,6 @@
     padding: 15px 35px;
     text-decoration: none;
     border-radius: 50px;
-    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 1px;
@@ -286,7 +286,7 @@
 }
 
 .about-platform__text h2 {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 3.2rem;
     font-weight: 700;
     color: #333;
@@ -296,7 +296,7 @@
 }
 
 .about-platform__text p {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     font-size: 1.2rem;
     color: #555;
     line-height: 1.8;
@@ -418,7 +418,7 @@
 }
 
 .quick-navigation h3 {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 2.8rem;
     color: #333;
     margin-bottom: 50px;
@@ -501,7 +501,7 @@
 }
 
 .nav-item span {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 1.6rem;
     font-weight: 600;
     color: #333;

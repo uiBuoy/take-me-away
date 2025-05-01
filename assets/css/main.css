@@ -7,6 +7,45 @@
     /* outline: 2px solid pink; */
 }
 
+
+@font-face {
+    font-family: 'Thicccboi';
+    src: url('../Webfont/THICCCBOI-Regular.woff2') format('woff2'),
+      url('../Webfont/THICCCBOI-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Thicccboi';
+    src: url('../Webfont/THICCCBOI-Bold.woff2') format('woff2'),
+      url('../Webfont/THICCCBOI-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Thicccboi';
+    src: url('../Webfont/THICCCBOI-Light.woff2') format('woff2'),
+      url('../Webfont/THICCCBOI-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+
+/* Body defaults */
+
+
+/* Links */
+a {
+    font-family: 'Thicccboi', sans-serif;
+}
+
+button{
+    cursor: pointer;
+    font-family: 'Thicccboi', sans-serif;
+}
+
 /* Ensure the page takes the full height */
 html,
 body {
@@ -15,10 +54,11 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-size: 16px;
     line-height: 1.5;
     color: #333333;
+    font-family: 'Thicccboi', sans-serif;
 }
 
 /* Add space to the body so content isn't hidden under the fixed header */
@@ -302,7 +342,7 @@ footer {
     position: relative;
     bottom: 0;
     box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
 }
 
 .footer-horizontal {
@@ -408,7 +448,8 @@ button {
     color: #333333;
     padding: 12px 25px;
     border: 2px solid #FFD700;
-    border-radius: 25px;
+    /* border-radius: 25px; */
+    border-radius: inherit;
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -418,7 +459,7 @@ button {
 button:hover {
     background-color: #FFE135;
     border-color: #FFE135;
-    transform: translateY(-2px);
+    /* transform: translateY(-2px); */
 }
 
 /* Link Styles */
