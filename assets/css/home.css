@@ -105,7 +105,7 @@
 /* CTA Button */
 .btn {
     display: inline-block;
-    background-color: white;
+    background-color: #FFD700;
     color: #333333;
     padding: 15px 35px;
     text-decoration: none;
@@ -120,7 +120,7 @@
 }
 
 .btn:hover {
-    background-color: #FFE135;
+    background-color: #ffffff;
     border-color: #FFE135;
     transform: translateY(-2px);
     color: #333333;
@@ -459,10 +459,10 @@
     padding: 35px 30px;
     border-radius: 20px;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    background: white;
+    background: #FFD700; /* Changed from white to yellow */
     width: 280px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(255, 215, 0, 0.1);
+    border: 1px solid rgba(255, 215, 0, 0.3); /* stronger to match bg */
     position: relative;
     overflow: hidden;
 }
@@ -474,7 +474,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent); /* Updated to show contrast on yellow */
     transform: translateX(-100%);
     transition: transform 0.6s;
 }
@@ -482,7 +482,7 @@
 .nav-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    border-color: #FFD700;
+    border-color: #e6c200; /* slightly darker yellow for hover border */
 }
 
 .nav-item:hover:before {
@@ -490,8 +490,9 @@
 }
 
 .nav-item img {
-    width: 80px;
+    width: auto;
     height: 80px;
+    min-width: 80px;
     margin-bottom: 25px;
     transition: all 0.4s ease;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
@@ -503,7 +504,6 @@
 }
 
 .nav-item span {
-    /* font-family: 'Playfair Display', serif; */
     font-size: 1.6rem;
     font-weight: 600;
     color: #333;
@@ -514,7 +514,7 @@
 }
 
 .nav-item:hover span {
-    color: #FFD700;
+    color: #fff; /* white text on yellow bg looks good */
     transform: translateY(-2px);
 }
 
