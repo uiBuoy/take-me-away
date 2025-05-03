@@ -39,54 +39,27 @@ const blogPosts = [
     //   <img src="https://img.freepik.com/free-photo/business-women-meeting-office_23-2148347234.jpg" alt="Team success" class="content-img" />
     // `
     // },
+
     {
-      id: "fueling-growth",
-      title: "Fueling Growth: The Journey of a Lifelong Learner",
-      subtitle: "How Meenal’s vision of lifelong learning shaped TakeMeAway",
-      image: "./assets/images/blog-001.jpg",
-      category: "Founder Story",
+      id: "the-confidence-class",
+      title: "The Confidence Class",
+      subtitle: "How teaching kids helped me rediscover myself",
+      image: "./assets/images/blog-005.jpg",
+      category: "Life Lessons",
       author: "Meenal",
-      date: "April 25, 2025",
+      date: "May 3, 2025",
       content: `
-        <p><strong>Meenal</strong> is the visionary founder of <em>TakeMeAway</em>, a platform where travel, learning, and community converge to create transformative experiences.</p>
+        <p>While I was on a break after my surgery, I had time to slow down and think about what really matters to me. That’s when I got the opportunity to teach over 100 kids, aged 5 to 12, at the Shiv Nagar Jain Mandir in Shree Vidyasagar Sanskar Vatika Pathshala, Jabalpur.</p>
         
-        <p>With over 15 years of experience leading product innovation, driving sales, engagement, and delivering trainings across brands like <strong>MakeMyTrip</strong>, <strong>upGrad</strong>, and <strong>IndiGo</strong>, Meenal’s work is deeply rooted in her personal journey of growth and self-discovery.</p>
-    
-        <p>She believes in reading <strong>“Empower”</strong> as <strong>“I Am Power”</strong> — a philosophy she passionately advances through mindset rewiring and community-driven initiatives.</p>
+        <p>I chose to teach them something I struggled with for years—how to build confidence. I was never taught this as a child, and it took me a long time to believe in myself. So, I wanted to give these kids a better start.</p>
         
-        <p><strong>TakeMeAway</strong> is a testament to her belief that learning is not a destination but a lifelong journey of becoming your best self.</p>
+        <p>We kept it simple with 3 rules: respect each other, clap for each other, and most of all, have fun in the class. I asked them to say, “I have the power!” and feel it in their hearts. The way they joined in, with energy and excitement, made me feel proud and full of hope.</p>
         
-        <h3>What Drives Her</h3>
-        <ul>
-          <li>📚 A deep passion for lifelong learning</li>
-          <li>🌍 A desire to connect people through shared travel and educational experiences</li>
-          <li>💬 A belief in community as a catalyst for change</li>
-        </ul>
+        <p>One little girl said something that stayed with me—“I feel like I live in Swarg (heaven).” Her words reminded me to see the beauty in life and feel grateful for every moment.</p>
         
-        <p>Meenal continues to inspire thousands with her story and mission, reminding us all that true growth begins with curiosity and courage.</p>
-      `
-    },
-    {
-      id: "beyond-privilege",
-      title: "Beyond What Meets the Eye: A Reflection on Privilege and Inclusion",
-      subtitle: "A personal story that challenges assumptions and deepens empathy",
-      image: "./assets/images/blog-002.jpg",
-      category: "Reflections",
-      author: "Meenal",
-      date: "April 28, 2025",
-      content: `
-        <p><strong>Not all challenges are visible</strong>, and not all privileges are recognized at first glance.</p>
+        <p>To be honest, I never thought I’d enjoy working with kids. I didn’t think I had the patience. But this experience changed my thinking. I felt calm, happy, and full of purpose.</p>
         
-        <p>During a recent visit to a government hospital to obtain my <strong>Unique Disability ID (UDID)</strong>, I witnessed people with visible and severe disabilities enduring long queues — not just for treatment, but for basic documentation.</p>
-        
-        <p>Meanwhile, I waited comfortably while my father stood in line for me — a stark reminder of the <em>silent privileges</em> that cushion many of us.</p>
-        
-        <p>Born into a home filled with love and opportunity, I was shielded from much hardship. Yet <strong>self-acceptance</strong> was still a long internal battle.</p>
-        
-        <p>This moment reinforced a powerful truth: <strong>Inclusion isn’t about policies — it’s about empathy, acknowledgment, and creating spaces where every story matters.</strong></p>
-        
-        <h3>A Commitment to Change</h3>
-        <p>I am committed to building platforms that recognize every woman’s journey — making them feel truly <strong>seen, heard, and celebrated</strong>.</p>
+        <p>Sometimes, life takes you where you’re meant to be—not through plans, but through surprises. Teaching these little hearts helped me reconnect with mine. And maybe, just maybe, this is where my real journey begins.</p>
       `
     },
     {
@@ -117,7 +90,57 @@ const blogPosts = [
         <p><strong>Love, Meenal</strong><br/>
         <a href="mailto:takemeaway.womenretreat@gmail.com">takemeaway.womenretreat@gmail.com</a></p>
       `
-    },  
+    }, 
+    {
+      id: "beyond-privilege",
+      title: "Beyond What Meets the Eye: A Reflection on Privilege and Inclusion",
+      subtitle: "A personal story that challenges assumptions and deepens empathy",
+      image: "./assets/images/blog-002.jpg",
+      category: "Reflections",
+      author: "Meenal",
+      date: "April 28, 2025",
+      content: `
+        <p><strong>Not all challenges are visible</strong>, and not all privileges are recognized at first glance.</p>
+        
+        <p>During a recent visit to a government hospital to obtain my <strong>Unique Disability ID (UDID)</strong>, I witnessed people with visible and severe disabilities enduring long queues — not just for treatment, but for basic documentation.</p>
+        
+        <p>Meanwhile, I waited comfortably while my father stood in line for me — a stark reminder of the <em>silent privileges</em> that cushion many of us.</p>
+        
+        <p>Born into a home filled with love and opportunity, I was shielded from much hardship. Yet <strong>self-acceptance</strong> was still a long internal battle.</p>
+        
+        <p>This moment reinforced a powerful truth: <strong>Inclusion isn’t about policies — it’s about empathy, acknowledgment, and creating spaces where every story matters.</strong></p>
+        
+        <h3>A Commitment to Change</h3>
+        <p>I am committed to building platforms that recognize every woman’s journey — making them feel truly <strong>seen, heard, and celebrated</strong>.</p>
+      `
+    }, 
+    {
+      id: "fueling-growth",
+      title: "Fueling Growth: The Journey of a Lifelong Learner",
+      subtitle: "How Meenal’s vision of lifelong learning shaped TakeMeAway",
+      image: "./assets/images/blog-001.jpg",
+      category: "Founder Story",
+      author: "Meenal",
+      date: "April 25, 2025",
+      content: `
+        <p><strong>Meenal</strong> is the visionary founder of <em>TakeMeAway</em>, a platform where travel, learning, and community converge to create transformative experiences.</p>
+        
+        <p>With over 15 years of experience leading product innovation, driving sales, engagement, and delivering trainings across brands like <strong>MakeMyTrip</strong>, <strong>upGrad</strong>, and <strong>IndiGo</strong>, Meenal’s work is deeply rooted in her personal journey of growth and self-discovery.</p>
+    
+        <p>She believes in reading <strong>“Empower”</strong> as <strong>“I Am Power”</strong> — a philosophy she passionately advances through mindset rewiring and community-driven initiatives.</p>
+        
+        <p><strong>TakeMeAway</strong> is a testament to her belief that learning is not a destination but a lifelong journey of becoming your best self.</p>
+        
+        <h3>What Drives Her</h3>
+        <ul>
+          <li>📚 A deep passion for lifelong learning</li>
+          <li>🌍 A desire to connect people through shared travel and educational experiences</li>
+          <li>💬 A belief in community as a catalyst for change</li>
+        </ul>
+        
+        <p>Meenal continues to inspire thousands with her story and mission, reminding us all that true growth begins with curiosity and courage.</p>
+      `
+    },
     {
       id: "power-of-pause",
       title: "The Power of Pause: From Chaos to Calm",
@@ -136,28 +159,7 @@ const blogPosts = [
         <p>Love,<br>Meenal<br>(22.03.2025)</p>
       `
     },
-    {
-      id: "the-confidence-class",
-      title: "The Confidence Class",
-      subtitle: "How teaching kids helped me rediscover myself",
-      image: "./assets/images/blog-005.jpg",
-      category: "Life Lessons",
-      author: "Meenal",
-      date: "May 3, 2025",
-      content: `
-        <p>While I was on a break after my surgery, I had time to slow down and think about what really matters to me. That’s when I got the opportunity to teach over 100 kids, aged 5 to 12, at the Shiv Nagar Jain Mandir in Shree Vidyasagar Sanskar Vatika Pathshala, Jabalpur.</p>
-        
-        <p>I chose to teach them something I struggled with for years—how to build confidence. I was never taught this as a child, and it took me a long time to believe in myself. So, I wanted to give these kids a better start.</p>
-        
-        <p>We kept it simple with 3 rules: respect each other, clap for each other, and most of all, have fun in the class. I asked them to say, “I have the power!” and feel it in their hearts. The way they joined in, with energy and excitement, made me feel proud and full of hope.</p>
-        
-        <p>One little girl said something that stayed with me—“I feel like I live in Swarg (heaven).” Her words reminded me to see the beauty in life and feel grateful for every moment.</p>
-        
-        <p>To be honest, I never thought I’d enjoy working with kids. I didn’t think I had the patience. But this experience changed my thinking. I felt calm, happy, and full of purpose.</p>
-        
-        <p>Sometimes, life takes you where you’re meant to be—not through plans, but through surprises. Teaching these little hearts helped me reconnect with mine. And maybe, just maybe, this is where my real journey begins.</p>
-      `
-    }
+
     
     
   ];

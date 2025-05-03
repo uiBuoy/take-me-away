@@ -377,6 +377,7 @@
 
     .about-platform__image {
         width: 80%;
+        width: auto;
     }
 
     .about-platform__text h2 {
@@ -399,6 +400,7 @@
 
     .about-platform__image {
         width: 100%;
+        width: fit-content;
     }
 
     .about-platform__image:before {
