@@ -3,8 +3,10 @@ const components = {
     header: `
     <header>
     <div class="left-section">
-        <div class="logo">
-            <img class="logo-img" src="./assets/images/new-logo.jpeg" alt="TakeMeAway Logo">
+        <div class="logo" id="take-me-away-logo">
+            <a href="/index.html" style="display: inline-flex;">
+               <img class="logo-img" src="./assets/images/new-logo.jpeg" alt="TakeMeAway Logo">
+            </a>
             <!--  <div class="logo-title">Take me Away</div> -->
         </div>
     </div>
@@ -20,13 +22,13 @@ const components = {
     <nav class="desktop-nav">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="categories.html">Journeys</a></li>
+            <li><a href="categories.html">Our Journeys</a></li>
             <li><a href="retreats.html">Women-Only Retreats</a></li>
-            <li><a href="about.html">Inspirational stories</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-
+            <li><a href="testimonials.html">Inspirational stories</a></li>  
+            <li><a href="blogs.html">Our Blogs</a></li>
         </ul>
     </nav>
+    <!-- remove about.html -->
 
     <!-- Mobile Nav (slide-in) -->
     <nav id="mobile-nav">
@@ -34,7 +36,7 @@ const components = {
             <li><a href="index.html">Home</a></li>
             <li><a href="categories.html">Journeys</a></li>
             <li><a href="retreats.html">Women-Only Retreats</a></li>
-            <li><a href="about.html">Inspirational stories</a></li>
+            <li><a href="testimonials.html">Inspirational stories</a></li>  
             <li><a href="blogs.html">Blogs</a></li>
 
         </ul>
@@ -94,3 +96,4 @@ window.addEventListener('click', function (e) {
         hamburger.classList.remove('open');
     }
 });
+

@@ -105,6 +105,10 @@ header {
     object-fit: cover;
     border-radius: 6px;
 }
+.logo a {
+    text-decoration: none;
+    border: none;
+}
 
 .logo-title {
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -253,6 +257,7 @@ header {
 .right-section {
     min-width: 100px;
     text-align: right;
+    display: none;
 }
 
 /* === Responsive Rules === */
