@@ -43,6 +43,7 @@
     /* font-family: 'Playfair Display', serif; */
     font-size: 4.5rem;
     font-weight: 700;
+    margin-top: 70px;
     margin-bottom: 20px;
     letter-spacing: 2px;
     line-height: 1.1;
@@ -513,6 +514,10 @@
         width: 100%;
         text-align: center;
     }
+    .about-hero-text h1 {
+       margin-top: auto;
+    }
+
 
     .about-hero-image {
         width: 100%;
