@@ -278,7 +278,24 @@ header {
     }
 
     .desktop-nav ul li {
-        margin: 0 12px;            /* slightly tighter spacing on tablet */
+        margin: 0 10px;            /* slightly tighter spacing on tablet */
+    }
+}
+@media (max-width: 1024px) {
+    .logo-img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+}
+
+/* this break only use for tablet view fixes */
+@media (max-width: 850px) {    
+    .desktop-nav ul li a {
+        /* font-weight: 400; */
+        font-size: 14px;
+        padding: 5px;
     }
 }
 
