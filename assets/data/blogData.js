@@ -117,7 +117,48 @@ const blogPosts = [
         <p><strong>Love, Meenal</strong><br/>
         <a href="mailto:takemeaway.womenretreat@gmail.com">takemeaway.womenretreat@gmail.com</a></p>
       `
+    },  
+    {
+      id: "power-of-pause",
+      title: "The Power of Pause: From Chaos to Calm",
+      subtitle: "Why slowing down saved my life — and might save yours too",
+      image: "./assets/images/blog-004.jpg",
+      category: "Well-being",
+      author: "Meenal",
+      date: "March 22, 2025",
+      content: `
+        <p>For years, I pushed through the warning signs — persistent neck and shoulder pain — until a slipped disc in my cervical spine forced me to stop.</p>
+        <p>After surgery and 3 months of healing, I realized that pausing is not a weakness — it’s an act of self-respect and survival.</p>
+        <p>I embraced a new way of living: prioritizing rest, mindfulness, meditation, journaling, and spiritual practices.</p>
+        <p>This journey taught me that ambition must never come at the cost of health.</p>
+        <p><strong>To all the driven women out there:</strong></p>
+        <p><em>Pause. Listen to your body. Set your boundaries.<br>Your dreams need your health more than your hustle.</em></p>
+        <p>Love,<br>Meenal<br>(22.03.2025)</p>
+      `
+    },
+    {
+      id: "the-confidence-class",
+      title: "The Confidence Class",
+      subtitle: "How teaching kids helped me rediscover myself",
+      image: "./assets/images/blog-005.jpg",
+      category: "Life Lessons",
+      author: "Meenal",
+      date: "May 3, 2025",
+      content: `
+        <p>While I was on a break after my surgery, I had time to slow down and think about what really matters to me. That’s when I got the opportunity to teach over 100 kids, aged 5 to 12, at the Shiv Nagar Jain Mandir in Shree Vidyasagar Sanskar Vatika Pathshala, Jabalpur.</p>
+        
+        <p>I chose to teach them something I struggled with for years—how to build confidence. I was never taught this as a child, and it took me a long time to believe in myself. So, I wanted to give these kids a better start.</p>
+        
+        <p>We kept it simple with 3 rules: respect each other, clap for each other, and most of all, have fun in the class. I asked them to say, “I have the power!” and feel it in their hearts. The way they joined in, with energy and excitement, made me feel proud and full of hope.</p>
+        
+        <p>One little girl said something that stayed with me—“I feel like I live in Swarg (heaven).” Her words reminded me to see the beauty in life and feel grateful for every moment.</p>
+        
+        <p>To be honest, I never thought I’d enjoy working with kids. I didn’t think I had the patience. But this experience changed my thinking. I felt calm, happy, and full of purpose.</p>
+        
+        <p>Sometimes, life takes you where you’re meant to be—not through plans, but through surprises. Teaching these little hearts helped me reconnect with mine. And maybe, just maybe, this is where my real journey begins.</p>
+      `
     }
+    
     
   ];
   

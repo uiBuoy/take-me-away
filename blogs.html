@@ -28,7 +28,10 @@
         <div class="blog-content">
           <span class="category">${post.category}</span>
           <h2>${post.title}</h2>
-          <p class="subtitle">${post.subtitle}</p>
+          <div class="subtitle-wrapper">
+            <p class="subtitle">${post.subtitle}</p>
+            <a href="blog-details.html?id=${post.id}" class="read-more-inline">Read more →</a>
+          </div>
           <div class="meta">${post.date} | by ${post.author}</div>
         </div>
       `;
