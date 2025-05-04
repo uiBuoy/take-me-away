@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Blogs</title>
-  <link rel="stylesheet" href="./assets/css/blogs.css" />
-  <link rel="stylesheet" href="./assets/css/main.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <title>Empowering Stories & Reflections | TakeMeAway Blog</title>
+  
+    <!-- Meta Description -->
+    <meta name="description" content="Read inspiring stories from women on personal growth, resilience, inclusion, and rediscovery. Explore the TakeMeAway blog for real journeys and powerful reflections." />
+  
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.takemeaway.com/blogs" />
+  
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/blogs.css" />
+  
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/new-logo.jpeg" type="image/x-icon" />
+  </head>
 <body>
   <div id="header"></div>
 
@@ -37,7 +49,7 @@
       const blogCard = document.createElement("div");
       blogCard.className = "blog-card";
       blogCard.innerHTML = `
-        <img src="${post.image}" alt="${post.title}">
+        <img src="${post.image}" alt="${post.title}" loading="lazy">
         <div class="blog-content">
           <span class="category">${post.category}</span>
           <h2>${post.title}</h2>

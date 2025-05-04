@@ -1,16 +1,6 @@
 @import url('main.css');
 /* Import global styles */
 
-/* Using softer yellow shades:
-Primary: #FFF4D4 (very light yellow)
-Secondary: #FFEEBA (soft yellow)
-Accent: #FFE5A3 (warm yellow) */
-
-html, body {
-    /* height: 100%;
-    margin: 0;
-    padding: 0; */
-  }
 
 /* Blogs Hero Section */
 .retreat-hero {
@@ -46,44 +36,36 @@ html, body {
   }
   
   .retreat-hero-text h1 {
-    /* font-family: 'Playfair Display', serif; */
-    font-size: 4rem;
-    font-weight: 700;
+    font-size: 2.8rem;
+    font-weight: 500;
     margin-top: 70px;
     margin-bottom: 20px;
     letter-spacing: 2px;
     line-height: 1.1;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+    /* color: #333333; */
+    margin-bottom: 15px;
+    font-style: italic;
+    letter-spacing: 1px;
   }
   
   .retreat-hero-text p {
-    /* font-family: 'Poppins', sans-serif; */
     font-size: 1.4rem;
     font-weight: 300;
     margin-bottom: 30px;
     line-height: 1.6;
     letter-spacing: 0.5px;
-  }
 
-  .retreat-hero-text h1 {
-    font-size: 2.8rem;
-    /* color: #333333; */
-    font-weight: 300;
-    margin-bottom: 15px;
-    font-style: italic;
-    letter-spacing: 1px;
-}
-
-.retreat-hero-text p {
-    font-size: 1.2rem;
     /* color: #666; */
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto 30px;
-}
+  }
 
+  
 
-
+/* Actual Retreats Section  */
 
 /* Retreats Page */
 .retreats {
@@ -94,22 +76,6 @@ html, body {
     background: white;
 }
 
-.retreats h1 {
-    font-size: 2.8rem;
-    color: #333333;
-    font-weight: 300;
-    margin-bottom: 15px;
-    font-style: italic;
-    letter-spacing: 1px;
-}
-
-.retreats p {
-    font-size: 1.2rem;
-    color: #666;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto 30px;
-}
 
 /* Accordion Section */
 .accordion {
@@ -340,17 +306,6 @@ html, body {
     color: #333333;
 }
 
-.countdown {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 30px;
-    color: #333333;
-    background: #FFF9E6;
-    padding: 15px 30px;
-    border-radius: 50px;
-    display: inline-block;
-}
-
 .cta-button {
     background: #FFD700;
     color: #333333;
@@ -373,8 +328,12 @@ html, body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .retreats h1 {
-        font-size: 2.2rem;
+    .retreat-hero-text h1{
+        font-size: 2rem;
+    }
+
+    .retreat-hero-text p{
+        font-size: 1.2rem;
     }
 
     .accordion-container {
@@ -396,11 +355,6 @@ html, body {
 
     .cta-button {
         font-size: 1.1rem;
-        padding: 12px 25px;
-    }
-
-    .countdown {
-        font-size: 1.2rem;
         padding: 12px 25px;
     }
 
