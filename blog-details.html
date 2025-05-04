@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Blog Details</title>
+  <title>Blog Details | TakeMeAway</title>
+  <meta name="description" content="Read empowering stories on growth, identity, and transformation from the TakeMeAway community.">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.takemeaway.com/blog-details.html?id=1">
+  
   <link rel="stylesheet" href="./assets/css/blogs.css" />
   <link rel="stylesheet" href="./assets/css/main.css">
-    </head>
+  <link rel="icon" href="./assets/images/new-logo.jpeg" type="image/x-icon">
+</head>
 <body>
   <div id="header"></div>
   <div class="blog-wrapper">
@@ -27,6 +33,22 @@
     const container = document.getElementById("blog-details");
 
     if (blog) {
+
+      // For Head tag to improve the SEO
+      document.title = `${blog.title} | TakeMeAway Blog`;
+
+      const metaDescription = document.querySelector('meta[name="description"]');
+      if (metaDescription) {
+        metaDescription.setAttribute("content", blog.subtitle || "Empowering women’s journeys of self-discovery and growth.");
+      }
+
+      // Update the canonical URL
+      const canonical = document.querySelector('link[rel="canonical"]');
+      if (canonical) {
+        canonical.href = `https://www.takemeaway.com/blog-details.html?id=${blog.id}`;
+      }
+
+      // Append/update the actul blog content to blog details page
       container.innerHTML = `
         <div class="blog-header">
           <img src="${blog.image}" alt="${blog.title}" class="blog-main-image" loading="lazy">

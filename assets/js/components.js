@@ -3,7 +3,7 @@ const components = {
     header: `
     <header>
     <div class="left-section">
-        <div class="logo" id="take-me-away-logo">
+        <div class="logo">
             <a href="/index.html" style="display: inline-flex;">
                <img class="logo-img" src="./assets/images/new-logo.jpeg" alt="TakeMeAway Logo">
             </a>
