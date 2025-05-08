@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // to open google form by cliking to "Register Now"
 const registerBtn = document.getElementById("cta-button");
 registerBtn.addEventListener('click', () => {
-    window.open("https://docs.google.com/forms/d/1N4Dm4x0OIXJ92R5VHb1HlvjQvvuUtKDW_SETDStz8Dc/edit", '_blank');
+    window.open("https://docs.google.com/forms/d/1N4Dm4x0OIXJ92R5VHb1HlvjQvvuUtKDW_SETDStz8Dc", '_blank');
 })
 
 

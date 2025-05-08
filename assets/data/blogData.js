@@ -87,7 +87,7 @@ const blogPosts = [
         
         <p><em>Let’s build something bigger — together.</em></p>
         
-        <p><strong>Love, Meenal</strong><br/>
+        <p><strong>Meenal</strong><br/>
         <a href="mailto:takemeaway.womenretreat@gmail.com">takemeaway.womenretreat@gmail.com</a></p>
       `
     }, 
@@ -156,11 +156,8 @@ const blogPosts = [
         <p>This journey taught me that ambition must never come at the cost of health.</p>
         <p><strong>To all the driven women out there:</strong></p>
         <p><em>Pause. Listen to your body. Set your boundaries.<br>Your dreams need your health more than your hustle.</em></p>
-        <p>Love,<br>Meenal<br>(22.03.2025)</p>
+        <p><br>Meenal<br>(22.03.2025)</p>
       `
     },
-
-    
-    
   ];
   
