@@ -159,5 +159,71 @@ const blogPosts = [
         <p><br>Meenal<br>(22.03.2025)</p>
       `
     },
+    {
+  id: "my-life-in-a-nutshell",
+  title: "My Life in a Nutshell",
+  subtitle: "A personal reflection on self-growth, values, and spirituality",
+  image: "./assets/images/blog-006.png", // Replace with your actual image path
+  category: "Personal Journey",
+  author: "Anonymous", // Update with real name if needed
+  date: "May 21, 2025",
+  content: `
+    <h2>The Best Things in Life Are Free</h2>
+    <ul>
+      <li>The Sun, the Moon, the Stars</li>
+      <li>Love, Happiness, Compassion</li>
+      <li>Blessings of Parents</li>
+    </ul>
+
+    <h2>My 3 Devils</h2>
+    <ul>
+      <li>Impulsiveness</li>
+      <li>Temperament</li>
+      <li>Self-Doubt</li>
+    </ul>
+
+    <h2>3 Mottos to Live By</h2>
+    <ul>
+      <li>Be the centre of your life</li>
+      <li>Practice the Let Go Theory</li>
+      <li>Be kind, grateful, and compassionate</li>
+    </ul>
+
+    <h2>Rules of a Good Life</h2>
+    <ul>
+      <li>Health is prime</li>
+      <li>Be true to yourself</li>
+      <li>Forgive yourself, learn, and move on</li>
+      <li>Negative energy is wasted energy</li>
+      <li>Be present in the moment</li>
+      <li>Nothing is permanent</li>
+      <li>Karma is always following you</li>
+    </ul>
+
+    <h2>My Life Journey</h2>
+    <h3>School Life</h3>
+    <p>From not being accepted to becoming everyone’s favourite</p>
+
+    <h3>College Life</h3>
+    <p>Lived the best experiences with friends, learnt infinite lessons</p>
+
+    <h3>Corporate Life</h3>
+    <p>From immersing in work to using it as an escape and identity</p>
+    <p>Now, I see it as just a job – a means to a comfortable life</p>
+    <p>Be fearless, be resilient, and success will follow</p>
+
+    <h3>Relationship Status</h3>
+    <p>From not being accepted to self-acceptance</p>
+    <p>Now in a relationship with myself</p>
+    <p>Ready to open my heart to someone grounded, self-aware, and willing to grow</p>
+
+    <h2>Spirituality for Me</h2>
+    <ul>
+      <li>Looking inward</li>
+      <li>Becoming the best version of myself</li>
+      <li>Believing in the power of the universe</li>
+    </ul>
+  `
+},
   ];
   

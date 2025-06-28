@@ -22,6 +22,7 @@ const components = {
     <nav class="desktop-nav">
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="travel-advisor.html">Travel Planning</a></li>
             <li><a href="categories.html">Our Journeys</a></li>
             <li><a href="retreats.html">Women-Only Retreats</a></li>
             <li><a href="testimonials.html">Inspirational stories</a></li>  
@@ -34,7 +35,8 @@ const components = {
     <nav id="mobile-nav">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="categories.html">Journeys</a></li>
+            <li><a href="travel-advisor.html">Travel Planning</a></li>
+            <li><a href="categories.html">Our Journeys</a></li>
             <li><a href="retreats.html">Women-Only Retreats</a></li>
             <li><a href="testimonials.html">Inspirational stories</a></li>  
             <li><a href="blogs.html">Blogs</a></li>

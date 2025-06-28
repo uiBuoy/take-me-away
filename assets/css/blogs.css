@@ -85,10 +85,11 @@
 }
 
 .blog-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+  width: 100%; 
+  height: 340px;
+  object-fit: container;
   border-bottom: 1px solid #eee;
+  object-position: center center;
 }
 
 
